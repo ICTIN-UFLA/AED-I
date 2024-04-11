@@ -213,26 +213,28 @@ Sim, é possível implementar uma função de "histórico" em sua calculadora em
 
 1.  **Defina uma Estrutura para as Operações**: Primeiro, crie uma estrutura que pode armazenar uma operação e seu resultado. Por exemplo:
     
-    cCopy code
+```c
     
     `typedef struct {
         char operacao[50];  // Para armazenar a descrição da operação, como "2 + 3"
         double resultado;   // Para armazenar o resultado da operação
-    } Historico;` 
+    } Historico;
+```
     
 2.  **Crie um Array de Histórico**: Declare um array de `Historico` para armazenar um número fixo de operações passadas.
     
-    cCopy code
+```c
     
-    `#define TAMANHO_HISTORICO 10
+    #define TAMANHO_HISTORICO 10
     Historico historico[TAMANHO_HISTORICO];
-    int contadorHistorico = 0;` 
+    int contadorHistorico = 0;
+```
     
 3.  **Atualize o Histórico após cada Operação**: Após cada operação, atualize o histórico com a operação e o resultado.
     
-    cCopy code
+```c
     
-    `void atualizarHistorico(char *operacao, double resultado) {
+    void atualizarHistorico(char *operacao, double resultado) {
         if (contadorHistorico == TAMANHO_HISTORICO) {
             // Se o histórico estiver cheio, mova todos os itens uma posição para trás
             for (int i = 1; i < TAMANHO_HISTORICO; i++) {
@@ -245,18 +247,21 @@ Sim, é possível implementar uma função de "histórico" em sua calculadora em
         strcpy(historico[contadorHistorico].operacao, operacao);
         historico[contadorHistorico].resultado = resultado;
         contadorHistorico++;
-    }` 
+    }
+```
+
     
 4.  **Mostrar o Histórico**: Implemente uma função para mostrar o histórico de operações.
     
-    cCopy code
+```c
     
-    `void mostrarHistorico() {
+    void mostrarHistorico() {
         printf("Historico de Operacoes:\n");
         for (int i = 0; i < contadorHistorico; i++) {
             printf("%s = %.2lf\n", historico[i].operacao, historico[i].resultado);
         }
-    }` 
+    }
+```
     
 5.  **Integre com a Calculadora**: Certifique-se de chamar `atualizarHistorico` após cada operação e de adicionar uma opção no menu para chamar `mostrarHistorico`.
     
