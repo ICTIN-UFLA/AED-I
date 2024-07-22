@@ -1,0 +1,26 @@
+Nivel 1:
+mnop
+mnpo
+monp
+mopn
+mpon
+mpno
+nmop
+nmpo
+nomp
+nopm
+npom
+npmo
+onmp
+onpm
+omnp
+ompn
+opmn
+opnm
+pnom
+pnmo
+ponm
+pomn
+pmon
+pmno
+
