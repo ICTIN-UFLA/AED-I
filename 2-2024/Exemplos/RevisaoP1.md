@@ -502,5 +502,102 @@ lista[5] = 10;
 
 ---
 
+26.  Questões de Verdadeiro o**Verdadeiro ou Falso**: Em uma lista encadeada, os elementos são armazenados de forma contínua na memória.
+   
+27. **Verdadeiro ou Falso**: Para acessar o terceiro elemento de uma lista encadeada, é necessário percorrer todos os nós até ele, a partir da cabeça da lista.
+
+28. **Verdadeiro ou Falso**: O operador `->` é utilizado para acessar os campos de uma estrutura quando temos um ponteiro para essa estrutura.
+
+29. **Verdadeiro ou Falso**: Em uma lista encadeada, a inserção de elementos no final da lista é sempre mais rápida do que a inserção no início.
+
+30. **Verdadeiro ou Falso**: Uma lista encadeada permite remoção de elementos sem a necessidade de reorganizar os elementos restantes na memória.
+
+31. Em uma lista encadeada, cada nó contém:
+   - a) Um valor e o índice do próximo nó.
+   - b) Um ponteiro para o próximo nó e um valor armazenado.
+   - c) O endereço da cabeça da lista e um valor armazenado.
+   - d) Um ponteiro para o primeiro e o último nó da lista.
+
+32. Qual das seguintes operações geralmente é mais eficiente em uma lista encadeada do que em um array?
+   - a) Acesso direto a um elemento específico.
+   - b) Ordenação dos elementos.
+   - c) Inserção de um elemento no meio da lista.
+   - d) Comparação de todos os elementos.
+
+33. Qual das seguintes afirmações é verdadeira sobre o uso do operador `->` em listas encadeadas?
+   - a) `->` é usado apenas para definir um ponteiro para uma estrutura.
+   - b) `->` acessa o campo de uma estrutura apontada por um ponteiro.
+   - c) `->` sempre aponta para o último elemento da lista.
+   - d) `->` remove o elemento final de uma lista.
+
+34. Considere o código abaixo. O que ele faz?
+   ```c
+   struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+   newNode->data = 5;
+   newNode->next = NULL;
+ ```
+ -   a) Cria um novo nó, define o valor `data` como `5` e o próximo nó como `NULL`.
+-   b) Cria um novo nó sem inicializar o valor de `data` e `next`.
+-   c) Cria um nó temporário para uso local.
+-   d) Aponta `newNode` para o último nó da lista.
+
+35. Qual função a seguir é usada para liberar a memória alocada para um nó em uma lista encadeada?
+
+-   a) `malloc`
+-   b) `free`
+-   c) `realloc`
+-   d) `calloc`
+
+36. **Identifique e corrija o erro no código abaixo para inserir um novo nó no início de uma lista:**
+
+   ```c
+
+struct Node* head = NULL;
+struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+newNode->data = 10;
+head = newNode;
+```
+
+-   **Pergunta:** O que está faltando para que o nó `newNode` seja realmente o primeiro da lista?
+
+37. **Análise de Código:** Considere o seguinte código para remover um nó com valor específico de uma lista encadeada. Corrija o código se houver erros.
+
+
+   ```c
+void removerElemento(struct Node* head, int valor) {
+    struct Node* temp = head;
+    while (temp != NULL && temp->data != valor) {
+        temp = temp->next;
+    }
+    free(temp);
+}
+   ```
+-   **Pergunta:** Quais são os problemas no código e como corrigi-los?
+38. **Erro de Referência:** Analise o trecho de código e corrija-o para que insira um nó ao final da lista encadeada.
+
+
+   ```c
+   struct Node* inserirNoFinal(struct Node* head, int valor) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = valor;
+    newNode->next = NULL;
+    head->next = newNode;
+    return head;
+}
+
+   ```
+  -  **Pergunta:** O que está faltando para que o novo nó seja adicionado ao final da lista?
+  
+39.  **Explique a diferença entre uma lista encadeada e um array em termos de armazenamento de dados na memória.** Quais são as principais vantagens e desvantagens de cada um?
+    
+40.  **Descreva o processo de remoção de um nó específico de uma lista encadeada.** Quais cuidados devem ser tomados para evitar problemas de memória?
+    
+41.  **Explique o que acontece na memória quando usamos a função `free` em um nó de uma lista encadeada.** Por que é importante garantir que o ponteiro do nó anterior aponte para o próximo nó, ao invés do nó removido?
+    
+42.  **Discuta o papel da cabeça (ou nó sentinela) em uma lista encadeada.** Quais são as vantagens de manter um nó sentinela para apontar para o início da lista?
+    
+43.    **Qual é a importância de verificar se um ponteiro é `NULL` ao manipular uma lista encadeada?** Forneça exemplos de situações em que essa verificação é essencial.
+
+
 
 
