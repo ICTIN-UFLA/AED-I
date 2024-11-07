@@ -1,74 +1,73 @@
+
 # Lista de Exercícios - Alocação Dinâmica de Memória - AULA -2
 
-## Exercício 1: Vetor Dinâmico
-Faça um programa em C que:
-1. Leia um valor `n` do usuário.
-2. Crie dinamicamente um vetor de `n` elementos inteiros.
-3. Passe o vetor para uma função que deve preenchê-lo com valores fornecidos pelo usuário.
-4. Imprima o vetor após o preenchimento.
-5. Não se esqueça de liberar a memória alocada para o vetor.
+
+1. Faça um programa em C que:
+- Leia um valor `n` do usuário.
+- Crie dinamicamente um vetor de `n` elementos inteiros.
+- Passe o vetor para uma função que deve preenchê-lo com valores fornecidos pelo usuário.
+- Imprima o vetor após o preenchimento.
+- Não se esqueça de liberar a memória alocada para o vetor.
 
 *Dica:* Utilize `malloc` para alocar o vetor e `free` para liberar a memória.
 
-## Exercício 2: Simulando um Sistema de Cadastro
-Implemente um programa que simule o cadastro de clientes em uma loja. O programa deve:
-1. Solicitar ao usuário quantos cadastros ele deseja inserir.
-2. Alocar dinamicamente um vetor de estruturas onde cada estrutura armazena os dados de um cliente (nome, idade e telefone).
-3. Imprimir os dados cadastrados.
-4. Liberar toda a memória alocada ao final.
+2. Implemente um programa que simule o cadastro de clientes em uma loja. O programa deve:
+- Solicitar ao usuário quantos cadastros ele deseja inserir.
+- Alocar dinamicamente um vetor de estruturas onde cada estrutura armazena os dados de um cliente (nome, idade e telefone).
+- Imprimir os dados cadastrados.
+- Liberar toda a memória alocada ao final.
+
 
 *Dica:* Defina uma estrutura `Cliente` para armazenar os dados. Use `malloc` e `free` para alocação e liberação de memória.
 
-## Exercício 3: Operações com Matrizes Dinâmicas
-Escreva um programa que:
-1. Solicite ao usuário as dimensões de uma matriz (linhas e colunas).
-2. Aloque dinamicamente a matriz utilizando ponteiros.
-3. Preencha a matriz com valores inteiros digitados pelo usuário.
-4. Calcule e exiba a soma de todos os elementos.
-5. Libere a memória alocada para a matriz.
+3. Escreva um programa que:
+- Solicite ao usuário as dimensões de uma matriz (linhas e colunas).
+- Aloque dinamicamente a matriz utilizando ponteiros.
+- Preencha a matriz com valores inteiros digitados pelo usuário.
+- Calcule e exiba a soma de todos os elementos.
+- Libere a memória alocada para a matriz.
+
 
 *Dica:* Utilize ponteiros para ponteiros para representar a matriz e `malloc` para a alocação dinâmica.
 
-## Exercício 4: Cópia de Vetores com Ponteiros
-Escreva uma função que recebe dois ponteiros para inteiros e um tamanho `n`. A função deve:
-1. Copiar os valores de um vetor para outro.
-2. Caso o vetor destino não tenha memória suficiente, a função deve realocar a memória.
+4. Escreva uma função que recebe dois ponteiros para inteiros e um tamanho `n`. A função deve:
+- Copiar os valores de um vetor para outro.
+- Caso o vetor destino não tenha memória suficiente, a função deve realocar a memória.
 
 *Exemplo:* Se o vetor de origem possui 5 elementos e o destino apenas 3, realoque o destino para comportar todos os elementos antes de copiar.
 
 *Dica:* Utilize `malloc` e `realloc` para garantir o tamanho necessário no vetor destino.
 
-## Exercício 5: Manipulação de Strings com Ponteiros
-Crie um programa que:
-1. Solicite ao usuário uma frase de até 100 caracteres.
-2. Aloque dinamicamente uma string para armazenar essa frase.
-3. Converta todos os caracteres da frase para maiúsculas.
-4. Exiba a frase convertida.
-5. Libere a memória alocada.
+5. Crie um programa que:
+- Solicite ao usuário uma frase de até 100 caracteres.
+- Aloque dinamicamente uma string para armazenar essa frase.
+- Converta todos os caracteres da frase para maiúsculas.
+- Exiba a frase convertida.
+- Libere a memória alocada.
+
 
 *Dica:* Use `malloc` para alocar a memória para a string e `toupper` para converter os caracteres.
 
-## Exercício 6: Lista Encadeada
-Implemente uma lista encadeada para armazenar uma lista de compras. Cada nó deve conter o nome do item e a quantidade. O programa deve:
-1. Permitir adicionar itens na lista.
-2. Imprimir todos os itens da lista.
-3. Permitir a remoção de um item específico.
-4. Liberar toda a memória alocada ao encerrar o programa.
+6. mplemente uma lista encadeada para armazenar uma lista de compras. Cada nó deve conter o nome do item e a quantidade. O programa deve:
+- Permitir adicionar itens na lista.
+- Imprimir todos os itens da lista.
+- Permitir a remoção de um item específico.
+- Liberar toda a memória alocada ao encerrar o programa.
+
 
 *Dica:* Utilize uma estrutura de nó com ponteiros para formar a lista encadeada e `free` para liberar a memória.
 
-## Exercício 7: Alocação e Liberação Sequencial
-Faça um programa que:
-1. Crie um vetor de inteiros com tamanho `n` definido pelo usuário.
-2. Preencha o vetor com valores aleatórios entre 0 e 100.
-3. Ao final do preenchimento, libere a memória do vetor e peça ao usuário para inserir um novo valor de `n`.
-4. Repita o processo de alocação, preenchimento e liberação até que o usuário insira um valor negativo para `n`.
+7. Faça um programa que:
+- Crie um vetor de inteiros com tamanho `n` definido pelo usuário.
+- Preencha o vetor com valores aleatórios entre 0 e 100.
+- Ao final do preenchimento, libere a memória do vetor e peça ao usuário para inserir um novo valor de `n`.
+- Repita o processo de alocação, preenchimento e liberação até que o usuário insira um valor negativo para `n`.
+
 
 *Dica:* Use `rand` para gerar valores aleatórios e `malloc` para alocação.
 
 
-## Exercício 8: Gerenciamento de Memória - Erros Comuns
-Explique e corrija os seguintes trechos de código:
+8. Explique e corrija os seguintes trechos de código:
 
 ### Trecho A
 ```c
@@ -82,13 +81,12 @@ free(ptr);
 *ptr = 5;
 ```
 
-## Exercício 9: Funções que Alocam Memória
+9. Escreva uma função que:
 
-Escreva uma função que:
+- Receba um ponteiro para um vetor e um valor `n`.
+- Aloque dinamicamente um vetor de `n` elementos e preencha com números aleatórios.
+- Retorne o ponteiro para o vetor ao programa principal.
 
-1.  Receba um ponteiro para um vetor e um valor `n`.
-2.  Aloque dinamicamente um vetor de `n` elementos e preencha com números aleatórios.
-3.  Retorne o ponteiro para o vetor ao programa principal.
 
 ## Aula -2 Parte Teórica - Alocação Dinâmica de Memória
 
@@ -597,6 +595,813 @@ void removerElemento(struct Node* head, int valor) {
 42.  **Discuta o papel da cabeça (ou nó sentinela) em uma lista encadeada.** Quais são as vantagens de manter um nó sentinela para apontar para o início da lista?
     
 43.    **Qual é a importância de verificar se um ponteiro é `NULL` ao manipular uma lista encadeada?** Forneça exemplos de situações em que essa verificação é essencial.
+
+# Aula 4-Struct  e Ponteiros 
+
+## Questões de Verdadeiro ou Falso
+
+44. **Verdadeiro ou Falso**: Em C, o operador `.` é usado para acessar os campos de uma estrutura quando trabalhamos com variáveis de estrutura, e `->` é usado com ponteiros para estruturas.
+   
+45. **Verdadeiro ou Falso**: A função `malloc` aloca memória na stack (pilha) do programa.
+   
+46. **Verdadeiro ou Falso**: Uma estrutura (`struct`) em C pode conter diferentes tipos de dados, como `int`, `float` e `char`.
+   
+47. **Verdadeiro ou Falso**: Em C, a função `sizeof` retorna o número de bits ocupados por um tipo de dado.
+   
+48. **Verdadeiro ou Falso**: A expressão `typedef struct {...} NomeEstrutura;` cria um novo tipo de dados chamado `NomeEstrutura`, que pode ser usado como um tipo padrão no código.
+
+---
+
+49. Qual das seguintes opções é a maneira correta de definir uma estrutura `Pessoa` com os campos `idade` e `altura`?
+   - a) `struct Pessoa { int idade; int altura; };`
+   - b) `typedef Pessoa { int idade; int altura; }`
+   - c) `struct Pessoa = { int idade, int altura };`
+   - d) `typedef struct Pessoa { idade; altura; }`
+
+50. Qual operador é utilizado para acessar os campos de uma estrutura usando um ponteiro em C?
+   - a) `.`
+   - b) `*`
+   - c) `->`
+   - d) `&`
+
+51. Qual das alternativas abaixo representa a função da instrução `int *p = (int*) malloc(sizeof(int));`?
+   - a) Declara um ponteiro `p` para um inteiro e inicializa o valor com `sizeof(int)`.
+   - b) Aloca memória para um valor inteiro e armazena o endereço no ponteiro `p`.
+   - c) Aloca memória para um array de inteiros.
+   - d) Libera a memória apontada por `p`.
+
+52. Considerando a estrutura abaixo, qual é a maneira correta de definir uma variável `aluno1` da estrutura `Aluno` e atribuir o valor `20` para o campo `idade`?
+   ```c
+   typedef struct {
+       int idade;
+       float nota;
+   } Aluno;
+   ```
+   - a) `Aluno aluno1; aluno1->idade = 20;`
+   - b) `struct Aluno aluno1; aluno1.idade = 20;`
+   - c) `Aluno aluno1; aluno1.idade = 20;`
+   - d) `Aluno *aluno1; aluno1->idade = 20;`
+
+53. Qual das seguintes opções representa o uso correto da função `malloc` para alocar memória para uma estrutura `Pessoa` e acessar seus campos?
+    - a) `Pessoa *p = (Pessoa) malloc(sizeof(Pessoa)); p.idade = 25;`
+    - b) `Pessoa p = malloc(sizeof(Pessoa)); p.idade = 25;`
+    - c) `Pessoa *p = (Pessoa*) malloc(sizeof(Pessoa)); p->idade = 25;`
+    - d) `Pessoa p; p->idade = 25;`
+
+---
+
+
+54. **Identifique e corrija o erro no código abaixo que tenta alocar memória para uma estrutura `Pessoa` e definir valores para seus campos:**
+    ```c
+    typedef struct {
+        int idade;
+        float altura;
+    } Pessoa;
+
+    Pessoa *pessoa1;
+    pessoa1->idade = 30;
+    pessoa1->altura = 1.75;
+    ```
+    **Pergunta:** Qual é o erro e como corrigi-lo para que a estrutura seja corretamente alocada e inicializada?
+
+55. **Corrija o código abaixo para liberar corretamente a memória alocada para um ponteiro de tipo `PesoAltura`:**
+    ```c
+    typedef struct {
+        int peso;
+        int altura;
+    } PesoAltura;
+
+    PesoAltura *pessoa = (PesoAltura*) malloc(sizeof(PesoAltura));
+    pessoa.peso = 70;
+    pessoa.altura = 180;
+    free(pessoa);
+    ```
+    **Pergunta:** O que está incorreto no acesso e liberação da memória?
+
+56. **Erro de Tipagem:** Considere o trecho de código abaixo que define e inicializa uma variável usando uma estrutura. Corrija-o para que funcione corretamente:
+    ```c
+    typedef struct {
+        int codigo;
+        char nome[30];
+    } Produto;
+
+    Produto produto1;
+    produto1.codigo = "1234";
+    produto1.nome = "Teclado";
+    ```
+    **Pergunta:** O que está incorreto na atribuição dos valores para os campos da estrutura?
+
+---
+
+
+57. **Cadastro de Alunos:** Crie um programa que armazene informações de alunos em uma estrutura. A estrutura deve conter os campos `nome` (string), `idade` (inteiro) e `nota` (float). Permita que o usuário cadastre até 5 alunos e exiba os dados cadastrados.
+
+58. **Gestão de Produtos em Estoque:** Defina uma estrutura `Produto` com os campos `codigo` (inteiro), `nome` (string) e `preco` (float). Implemente um programa que permita cadastrar novos produtos e exibir o produto com o preço mais alto.
+
+59. **Verificação de Peso Máximo:** Usando a estrutura `PesoAltura` definida nos slides, crie um programa que solicite ao usuário o peso e a altura de várias pessoas e verifique se a altura de alguma delas excede `alturaMaxima` (225 cm). Use alocação dinâmica para permitir que o usuário defina quantas pessoas deseja cadastrar.
+
+60. **Atualização de Informações usando Ponteiros:** Defina uma estrutura `ContaBancaria` com os campos `numeroConta` (inteiro) e `saldo` (float). Escreva uma função que receba um ponteiro para uma `ContaBancaria` e atualize o saldo ao adicionar um valor fornecido pelo usuário. Teste a função com diferentes contas.
+
+61. **Ponteiros e Aritmética de Ponteiros:** Usando uma estrutura `Retangulo` com os campos `largura` e `altura`, implemente um programa que aloque dinamicamente um array de `Retangulo` e permita ao usuário preencher as dimensões de vários retângulos. O programa deve calcular e exibir a área de cada retângulo.
+
+# Aula 5 - Listas Encadeadas com e sem Cabeça, Listas Circulares
+
+62. **Verdadeiro ou Falso**: Em uma lista encadeada com cabeça, o primeiro elemento da lista é um nó especial que contém dados.
+   
+63. **Verdadeiro ou Falso**: Em uma lista encadeada sem cabeça, o primeiro elemento da lista é um nó que contém dados.
+   
+64. **Verdadeiro ou Falso**: Em uma lista encadeada com cabeça, o ponteiro "cabeça" aponta para o primeiro nó real da lista, não para o nó cabeça.
+   
+65. **Verdadeiro ou Falso**: Em listas circulares, o último nó aponta de volta para o primeiro nó, formando um ciclo.
+
+66. **Verdadeiro ou Falso**: A remoção de um elemento em uma lista encadeada com cabeça é sempre mais complexa do que em uma lista sem cabeça.
+
+---
+
+67. Qual das afirmações é verdadeira para uma lista encadeada com cabeça?
+   - a) O nó cabeça sempre contém dados.
+   - b) O nó cabeça facilita operações de inserção e remoção.
+   - c) O nó cabeça deve ser removido quando a lista está vazia.
+   - d) Não há diferença entre uma lista com cabeça e uma lista sem cabeça.
+
+68. Em uma lista circular, para qual elemento o ponteiro "next" do último nó aponta?
+   - a) Para o último nó
+   - b) Para o nó cabeça
+   - c) Para o primeiro nó
+   - d) Para `NULL`
+
+69. Em uma lista encadeada com cabeça, qual das operações abaixo é facilitada pela presença do nó cabeça?
+   - a) Inserção de um elemento no final
+   - b) Inserção de um elemento no meio
+   - c) Remoção do primeiro elemento
+   - d) Remoção do último elemento
+
+70. Em uma lista encadeada sem cabeça, qual operação exige uma verificação especial para o caso de um único elemento na lista?
+   - a) Inserção no início
+   - b) Inserção no final
+   - c) Remoção de um elemento
+   - d) Pesquisa de um elemento
+
+71. Em listas ligadas circulares, qual é o critério de parada típico para percorrer todos os elementos?
+    - a) Quando o ponteiro "next" é `NULL`
+    - b) Quando o ponteiro "next" aponta para o nó cabeça
+    - c) Quando o ponteiro "next" aponta para o primeiro elemento
+    - d) Quando todos os nós são `NULL`
+
+---
+
+72. **Identifique e corrija o erro no código abaixo que tenta criar uma lista encadeada com cabeça:**
+    ```c
+    struct Node {
+        int data;
+        struct Node* next;
+    };
+
+    struct Node* criarListaComCabeca() {
+        struct Node* cabeca = (struct Node*)malloc(sizeof(struct Node));
+        cabeca->next = NULL;
+        cabeca->data = 0;
+        return cabeca;
+    }
+    ```
+    **Pergunta:** Qual é o erro no código e como ajustá-lo para garantir que o nó cabeça não contenha dados?
+
+73. **Corrija o código abaixo para que insira um novo elemento no final de uma lista encadeada circular:**
+    ```c
+    void inserirNoFinalCircular(struct Node** head, int data) {
+        struct Node* novo = (struct Node*)malloc(sizeof(struct Node));
+        novo->data = data;
+        novo->next = *head;
+        if (*head == NULL) {
+            *head = novo;
+        } else {
+            struct Node* temp = *head;
+            while (temp->next != NULL) {
+                temp = temp->next;
+            }
+            temp->next = novo;
+        }
+    }
+    ```
+    **Pergunta:** O que está incorreto no tratamento da lista circular?
+
+74. **Erro de Ponteiro:** Corrija o seguinte código para que remova corretamente um nó específico em uma lista encadeada com cabeça:
+    ```c
+    void removerElemento(struct Node* head, int valor) {
+        struct Node* temp = head;
+        while (temp->next != NULL && temp->next->data != valor) {
+            temp = temp->next;
+        }
+        struct Node* aRemover = temp->next;
+        temp->next = aRemover->next;
+        free(aRemover);
+    }
+    ```
+    **Pergunta:** Qual é o problema com o código ao lidar com o nó cabeça?
+
+---
+
+75. **Implementação de Lista com Cabeça para Gerenciar Números Inteiros:** Crie uma lista encadeada com cabeça para armazenar números inteiros. Implemente as operações:
+    - Inserção no início, no fim e após um valor específico.
+    - Remoção de um elemento.
+    - Impressão de todos os elementos.
+
+76. **Gerenciamento de Fila com Lista Circular:** Implemente uma lista circular para simular uma fila em um banco. Cada nó representa um cliente com um `id` único. Implemente as operações:
+    - Inserir um novo cliente no final da fila.
+    - Atender o próximo cliente (remover do início da fila).
+    - Exibir todos os clientes na fila em ordem.
+
+77. **Lista Sem Cabeça para Cadastro de Produtos:** Crie uma lista encadeada sem cabeça para armazenar produtos em um sistema de estoque. Cada nó deve conter o código do produto e o nome. Implemente as operações:
+    - Inserir produto no início e no final da lista.
+    - Remover um produto específico da lista.
+    - Exibir todos os produtos.
+
+78. **Implementação de Lista Circular para Jogo Multiplayer:** Em um jogo multiplayer, os jogadores são armazenados em uma lista circular. Cada nó contém o nome do jogador. Implemente as operações:
+    - Adicionar um novo jogador ao final da lista.
+    - Passar o turno para o próximo jogador (simular rodadas).
+    - Exibir a lista de jogadores na ordem do ciclo.
+
+79. **Operações de Inserção e Remoção em Lista com Cabeça:** Crie uma lista encadeada com cabeça para gerenciar uma sequência de eventos (descritos por strings). Implemente as operações:
+    - Inserir um evento no início, no final e após um evento específico.
+    - Remover um evento específico.
+    - Exibir todos os eventos da lista.
+
+---
+
+# Aula 7- Pilha
+
+
+80. **Verdadeiro ou Falso**: Em uma pilha, o primeiro elemento inserido é o primeiro a ser removido.
+   
+81. **Verdadeiro ou Falso**: A operação `pop` remove o elemento do topo da pilha.
+   
+82. **Verdadeiro ou Falso**: A estrutura de dados pilha segue a política LIFO (Last-In-First-Out).
+   
+83. **Verdadeiro ou Falso**: A função `peek` retorna o elemento do topo da pilha sem removê-lo.
+   
+84. **Verdadeiro ou Falso**: Em uma pilha estática, a pilha está cheia se o topo é igual ao tamanho máximo `n`.
+
+---
+
+
+85. Qual das operações a seguir NÃO faz parte das operações típicas de uma pilha?
+   - a) push
+   - b) pop
+   - c) peek
+   - d) enqueue
+
+86. Em uma pilha, qual operação adiciona um novo elemento no topo?
+   - a) push
+   - b) pop
+   - c) peek
+   - d) remove
+
+87. Qual das afirmações abaixo é verdadeira para uma pilha estática com tamanho máximo `n`?
+   - a) A pilha está cheia quando `topo == n`.
+   - b) A pilha está vazia quando `topo == n`.
+   - c) A pilha está cheia quando `topo == 0`.
+   - d) A pilha está vazia quando `topo == n - 1`.
+
+88. Dado o código `x = pilha[--topo];`, qual operação está sendo realizada?
+   - a) push
+   - b) pop
+   - c) peek
+   - d) full
+
+89. Em uma pilha dinâmica implementada com uma lista encadeada, qual é o critério para verificar se a pilha está vazia?
+   - a) `topo == NULL`
+   - b) `topo == n`
+   - c) `topo == 0`
+   - d) `topo == -1`
+
+---
+
+90. **Identifique e corrija o erro no código abaixo que tenta implementar a operação `push` em uma pilha estática:**
+    ```c
+    void push(int pilha[], int *topo, int elemento) {
+        if (*topo >= 5) {
+            printf("Pilha cheia\n");
+        } else {
+            pilha[*topo] = elemento;
+            *topo++;
+        }
+    }
+    ```
+    **Pergunta:** Qual é o erro na atualização do ponteiro `topo`?
+
+91. **Corrija o código abaixo para que a operação `pop` funcione corretamente em uma pilha estática:**
+    ```c
+    int pop(int pilha[], int *topo) {
+        if (*topo == 0) {
+            printf("Pilha vazia\n");
+            return -1;
+        } else {
+            return pilha[*topo];
+            *topo--;
+        }
+    }
+    ```
+    **Pergunta:** O que está incorreto na manipulação do `topo` durante a remoção?
+
+92. **Erro de Condição de Cheio:** Considere o seguinte código que verifica se uma pilha está cheia. Corrija o código para que funcione corretamente:
+    ```c
+    int cheio(int topo) {
+        return topo > n;
+    }
+    ```
+    **Pergunta:** Como modificar a condição para que a função retorne `true` apenas quando a pilha estiver cheia?
+
+---
+
+
+93. **Implementação de Pilha Estática para Calculadora:** Implemente uma pilha estática para armazenar operações aritméticas de uma calculadora. A pilha deve:
+    - Permitir `push` de resultados intermediários.
+    - Realizar `pop` para desfazer a última operação.
+    - Mostrar o valor atual no topo com `peek`.
+
+94. **Controle de Navegação em Browser com Pilha Dinâmica:** Em um navegador de internet, o histórico de páginas visitadas pode ser representado por uma pilha. Implemente uma pilha dinâmica que permita:
+    - `push` de uma nova página visitada.
+    - `pop` para voltar à página anterior.
+    - Exibir a página atual sem removê-la com `peek`.
+
+95. **Conversão de Notação Infixa para Pós-fixa usando Pilha:** Utilize uma pilha para converter expressões aritméticas da notação infixa para a pós-fixa (notação polonesa reversa). Implemente uma função que:
+    - Receba uma expressão em notação infixa.
+    - Converta e exiba a expressão em notação pós-fixa usando uma pilha.
+
+96. **Verificação de Parênteses Balanceados:** Crie um programa que utiliza uma pilha para verificar se os parênteses em uma expressão matemática estão balanceados. O programa deve:
+    - Percorrer a expressão e empilhar cada parêntese de abertura.
+    - Realizar `pop` para cada parêntese de fechamento encontrado.
+    - Verificar se todos os parênteses foram corretamente fechados.
+
+97. **Desfazer e Refazer em Editor de Texto com Pilha:** Em um editor de texto, as operações de desfazer e refazer podem ser implementadas com duas pilhas. Implemente um programa que:
+    - Utilize uma pilha para armazenar ações de texto (inserções e deleções).
+    - Permita desfazer (`pop` da pilha de ações) e refazer (`push` em uma pilha de refazer).
+    - Exiba o conteúdo atual do texto após cada operação.
+
+# Aula 8 - Filas em C
+
+
+98. **Verdadeiro ou Falso**: Em uma fila, o primeiro elemento inserido é o primeiro a ser removido.
+   
+99. **Verdadeiro ou Falso**: A estrutura de dados fila segue a política FIFO (First-In-First-Out).
+   
+100. **Verdadeiro ou Falso**: Em uma fila estática implementada com um array, o último elemento está sempre na posição final do array.
+   
+101. **Verdadeiro ou Falso**: A operação `desenfileirar` remove o elemento na frente da fila.
+   
+102. **Verdadeiro ou Falso**: Uma fila circular permite reutilizar o espaço de memória do início do array quando ele é liberado.
+
+---
+
+
+103. Qual das operações a seguir é usada para adicionar um novo elemento ao final de uma fila?
+   - a) empilhar
+   - b) desenfileirar
+   - c) enfileirar
+   - d) adicionar_fim
+
+104. Em uma fila circular, o que acontece quando o índice `fim` atinge o final do array?
+   - a) O índice `fim` é redefinido para 0.
+   - b) O índice `fim` permanece no final.
+   - c) A fila é expandida automaticamente.
+   - d) Um erro é gerado indicando que a fila está cheia.
+
+105. Em uma fila dinâmica implementada com ponteiros, como se verifica se a fila está vazia?
+   - a) `inicio == fim`
+   - b) `inicio == NULL`
+   - c) `fim == NULL`
+   - d) `inicio == fim == NULL`
+
+106. Em uma fila circular implementada com array, qual é a fórmula para calcular a nova posição de `fim` ao enfileirar um elemento?
+   - a) `fim + 1`
+   - b) `(fim + 1) % tamanho_maximo`
+   - c) `(inicio + 1) % tamanho_maximo`
+   - d) `fim % tamanho_maximo`
+
+107. Qual das opções abaixo representa um uso típico de uma fila em sistemas operacionais?
+   - a) Pilha de chamadas de função
+   - b) Lista de processos prontos para execução
+   - c) Lista de comandos de desfazer/refazer
+   - d) Armazenamento temporário de variáveis locais
+
+---
+
+
+108. **Identifique e corrija o erro no código abaixo que tenta implementar a operação `enfileirar` em uma fila estática:**
+    ```c
+    void enfileirar(int fila[], int *fim, int elemento, int max) {
+        if (*fim == max) {
+            printf("Fila cheia\n");
+        } else {
+            fila[*fim] = elemento;
+            *fim = (*fim + 1) % max;
+        }
+    }
+    ```
+    **Pergunta:** Qual é o erro no controle de `fim` ao enfileirar em uma fila circular?
+
+109. **Corrija o código abaixo para que a operação `desenfileirar` funcione corretamente em uma fila estática:**
+    ```c
+    int desenfileirar(int fila[], int *inicio, int *fim) {
+        if (*inicio == *fim) {
+            printf("Fila vazia\n");
+            return -1;
+        } else {
+            int elemento = fila[*inicio];
+            *inicio++;
+            return elemento;
+        }
+    }
+    ```
+    **Pergunta:** O que está incorreto na atualização do índice `inicio` ao desenfileirar?
+
+110. **Erro de Condição de Cheio em Fila Circular:** Corrija o código abaixo para que verifique corretamente se a fila está cheia:
+    ```c
+    int cheia(int inicio, int fim, int max) {
+        return (fim + 1) % max == inicio;
+    }
+    ```
+    **Pergunta:** Como essa condição verifica se a fila circular está cheia?
+
+---
+
+
+111. **Simulação de Fila de Impressão com Fila Estática:** Implemente uma fila estática para gerenciar uma fila de impressão. A fila deve:
+    - Permitir `enfileirar` um novo trabalho de impressão.
+    - Realizar `desenfileirar` para processar o próximo trabalho.
+    - Exibir o número total de trabalhos na fila.
+
+112. **Gerenciamento de Atendimento em Banco com Fila Dinâmica:** Em um banco, clientes aguardam atendimento em uma fila. Implemente uma fila dinâmica que permita:
+    - `enfileirar` novos clientes.
+    - `desenfileirar` o próximo cliente a ser atendido.
+    - Exibir a lista atual de clientes aguardando.
+
+113. **Fila Circular para Armazenamento de Dados em Sensor:** Em um sistema de monitoramento, os dados são armazenados em uma fila circular com capacidade fixa. Implemente uma fila que:
+    - Permita `enfileirar` novos dados do sensor.
+    - Armazene apenas os últimos `n` valores devido à capacidade fixa.
+    - Exiba todos os dados atualmente armazenados na fila.
+
+114. **Simulação de Escalonamento de Processos com Fila Circular:** Implemente uma fila circular para simular o escalonamento de processos em um sistema operacional. Cada processo tem um ID único. A fila deve:
+    - `enfileirar` novos processos.
+    - `desenfileirar` o processo atual após sua execução.
+    - Exibir a ordem atual dos processos na fila.
+
+115. **Gestão de Pedidos em Restaurante com Fila Dinâmica:** Em um restaurante, pedidos são processados em uma fila dinâmica. Implemente uma fila que permita:
+    - `enfileirar` um novo pedido.
+    - `desenfileirar` o próximo pedido a ser atendido.
+    - Exibir todos os pedidos aguardando atendimento.
+
+---
+
+# Aula 9 - Matrizes em C
+
+## Questões de Verdadeiro ou Falso
+
+115. **Verdadeiro ou Falso**: Em C, uma matriz é uma estrutura de dados homogênea que armazena valores em duas dimensões.
+   
+116. **Verdadeiro ou Falso**: Para acessar o elemento de uma matriz em C, usamos o operador de índice duplo, como `matriz[i][j]`.
+   
+117. **Verdadeiro ou Falso**: A declaração `int matriz[3][4];` cria uma matriz com 3 linhas e 4 colunas.
+   
+118. **Verdadeiro ou Falso**: Em uma matriz `float matriz[2][2];`, a posição `matriz[0][1]` armazena o segundo elemento da primeira linha.
+   
+119. **Verdadeiro ou Falso**: O operador `sizeof` em C retorna o número total de elementos em uma matriz.
+
+---
+
+
+120. Qual das seguintes opções é a maneira correta de declarar uma matriz de inteiros com 5 linhas e 3 colunas?
+   - a) `int matriz[3][5];`
+   - b) `int matriz[5][3];`
+   - c) `int matriz[3][3];`
+   - d) `int matriz[5];`
+
+121. Suponha que `int matriz[2][3] = {{1, 2, 3}, {4, 5, 6}};`. Qual é o valor de `matriz[1][2]`?
+   - a) 2
+   - b) 3
+   - c) 5
+   - d) 6
+
+122. Qual das alternativas abaixo representa a forma correta de somar todos os elementos de uma matriz `int matriz[3][3]`?
+   - a) `soma = matriz[0] + matriz[1] + matriz[2];`
+   - b) `for (i = 0; i < 3; i++) for (j = 0; j < 3; j++) soma += matriz[i][j];`
+   - c) `soma = matriz[3][3];`
+   - d) `soma = matriz[i][j];`
+
+123. Em uma matriz `float matriz[4][4];`, quantos elementos no total essa matriz pode armazenar?
+   - a) 8
+   - b) 12
+   - c) 16
+   - d) 20
+
+124. Qual das opções a seguir descreve corretamente o processo de transposição de uma matriz `M`?
+   - a) A matriz `M` é espelhada horizontalmente.
+   - b) A matriz `M` é espelhada verticalmente.
+   - c) As linhas e colunas de `M` são trocadas, formando uma nova matriz `N`.
+   - d) A matriz `M` é ordenada em ordem crescente.
+
+---
+
+
+125. **Identifique e corrija o erro no código abaixo que tenta calcular a média dos elementos de uma matriz 2x2:**
+    ```c
+    float matriz[2][2] = {{1.0, 2.0}, {3.0, 4.0}};
+    float soma = matriz[0][0] + matriz[0][1] + matriz[1][0] + matriz[1][2];
+    float media = soma / 4.0;
+    ```
+    **Pergunta:** Qual é o erro no acesso aos elementos da matriz?
+
+126. **Corrija o código abaixo para que ele leia corretamente uma matriz 3x3 preenchida pelo usuário:**
+    ```c
+    int matriz[3][3];
+    for (int i = 0; i <= 3; i++) {
+        for (int j = 0; j <= 3; j++) {
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+    ```
+    **Pergunta:** O que está incorreto nos limites do loop?
+
+127. **Erro de Cálculo da Transposta:** Corrija o código abaixo que tenta calcular a transposta de uma matriz 2x2:
+    ```c
+    int matriz[2][2] = {{1, 2}, {3, 4}};
+    int transposta[2][2];
+    transposta[0][0] = matriz[0][0];
+    transposta[1][1] = matriz[1][1];
+    transposta[0][1] = matriz[1][0];
+    transposta[1][0] = matriz[0][1];
+    ```
+    **Pergunta:** Qual é o erro na ordem de atribuição para a transposição?
+
+---
+
+128. **Cálculo da Média dos Elementos de uma Matriz:** Crie um programa que leia os elementos de uma matriz 3x3, calcule e exiba a média dos valores armazenados.
+
+129. **Verificação de Simetria em Matriz Quadrada:** Implemente um programa que verifique se uma matriz quadrada 3x3 é simétrica. Uma matriz é simétrica se `matriz[i][j] == matriz[j][i]` para todos os `i` e `j`.
+
+130. **Transposição de Matrizes:** Crie um programa que leia uma matriz `M` de tamanho 4x2 e gere a matriz transposta `N` de tamanho 2x4.
+
+131. **Multiplicação de Matrizes:** Elabore um programa que solicite ao usuário duas matrizes 2x2 e calcule a matriz resultante da multiplicação entre elas.
+
+132. **Cálculo de Média e Classificação de Alunos:** Crie um programa que leia os nomes de 5 alunos e suas notas em duas provas. O programa deve:
+    - Calcular a média de cada aluno.
+    - Exibir os nomes dos alunos com média maior que a média da turma.
+
+---
+
+# Aula 10- Algoritmos Recursivos 
+
+
+133. **Verdadeiro ou Falso**: Uma função recursiva deve sempre ter um caso base para evitar uma recursão infinita.
+
+134. **Verdadeiro ou Falso**: A recursão em C permite que a função chame a si mesma ou outra função que eventualmente a chame de volta.
+
+135. **Verdadeiro ou Falso**: Na recursão, cada chamada da função mantém seu próprio estado independente das demais chamadas.
+
+136. **Verdadeiro ou Falso**: O fatorial de um número é um exemplo clássico de algoritmo recursivo.
+
+137. **Verdadeiro ou Falso**: Em uma função recursiva, variáveis estáticas podem ser acessadas e modificadas por todas as chamadas recursivas.
+
+---
+
+
+138. Qual é o elemento essencial que toda função recursiva deve ter para evitar uma execução infinita?
+   - a) Um retorno `NULL`
+   - b) Um caso base
+   - c) Uma variável estática
+   - d) Um loop `for`
+
+
+
+140. Em uma função recursiva, o que ocorre quando a condição do caso base é satisfeita?
+   - a) A função chama a si mesma novamente.
+   - b) A execução retorna para a chamada anterior.
+   - c) As variáveis locais são transferidas para a próxima chamada.
+   - d) O programa entra em um loop infinito.
+
+141. Considere a função recursiva de divisão inteira. Qual é o caso base para essa função?
+   - a) `dividendo == divisor`
+   - b) `dividendo < divisor`
+   - c) `dividendo > divisor`
+   - d) `dividendo >= divisor`
+
+142. Em uma função de Fibonacci recursiva, quantas chamadas recursivas a função `fib(4)` realizará no total?
+   - a) 3
+   - b) 5
+   - c) 7
+   - d) 9
+
+---
+
+143. **Identifique e corrija o erro no código abaixo que calcula o fatorial de um número recursivamente:**
+    ```c
+    int fatorial(int n) {
+        if (n == 0) {
+            return 0;
+        } else {
+            return n * fatorial(n - 1);
+        }
+    }
+    ```
+    **Pergunta:** Qual é o erro no caso base para calcular o fatorial?
+
+144. **Corrija o código abaixo para calcular corretamente a sequência de Fibonacci de um número `n`:**
+    ```c
+    int fibonacci(int n) {
+        if (n <= 1) {
+            return 1;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+    ```
+    **Pergunta:** O que está incorreto no caso base para o cálculo da sequência de Fibonacci?
+
+145. **Erro de Chamada Recursiva em Divisão Inteira:** Corrija o código abaixo para que ele calcule corretamente o quociente de uma divisão inteira usando recursão:
+    ```c
+    int divisao(int dividendo, int divisor) {
+        if (dividendo == 0) {
+            return 1;
+        } else {
+            return 1 + divisao(dividendo - divisor, divisor);
+        }
+    }
+    ```
+    **Pergunta:** Qual é o erro na condição de parada para a divisão inteira?
+
+---
+
+
+146. **Impressão de Frase ao Contrário Usando Recursão:** Escreva um programa que leia uma frase até o ponto final (`.`) e a imprima ao contrário usando recursão. A frase deve ser lida caractere a caractere.
+
+147. **Cálculo Recursivo da Sequência de Fibonacci:** Escreva uma função recursiva que receba um número `N` e exiba os `N` primeiros termos da sequência de Fibonacci.
+
+148. **Conversão Recursiva de Base Numérica:** Implemente um procedimento recursivo para converter um número decimal para uma base entre 2 e 9. A função deve receber o número e a base desejada e exibir o resultado na nova base.
+
+149. **Divisão Inteira Recursiva:** Escreva uma função recursiva que calcule a divisão inteira de dois números sem utilizar o operador de divisão, apenas usando subtrações sucessivas.
+
+
+# Aula 11 - Algoritmos Recursivos: Divisão e Conquista 
+
+
+150. **Verdadeiro ou Falso**: O paradigma de divisão e conquista divide um problema em partes menores, resolve essas partes e depois combina os resultados.
+
+151. **Verdadeiro ou Falso**: No algoritmo MergeSort, a divisão é a parte mais complexa, enquanto a combinação é trivial.
+
+152. **Verdadeiro ou Falso**: A abordagem de divisão e conquista pode ser aplicada a problemas em que as sub-instâncias são independentes e de tamanho semelhante.
+
+153. **Verdadeiro ou Falso**: Em um vetor totalmente ordenado de forma decrescente, o número de inversões é zero.
+
+154. **Verdadeiro ou Falso**: Algoritmos de divisão e conquista podem ser paralelizados facilmente em sistemas com múltiplos processadores.
+
+---
+
+
+155. Qual das etapas a seguir faz parte do paradigma de divisão e conquista?
+   - a) Dividir o problema em subproblemas menores.
+   - b) Comprimir os dados para otimizar a memória.
+   - c) Excluir subproblemas irrelevantes antes de resolver.
+   - d) Verificar duplicidade de dados.
+
+156. No contexto do MergeSort, qual das etapas a seguir ocorre após a divisão do problema?
+   - a) A divisão de subproblemas em partes ainda menores.
+   - b) A combinação de subsoluções para resolver o problema.
+   - c) A ordenação direta dos elementos.
+   - d) A remoção de duplicatas.
+
+157. Em um vetor, uma inversão ocorre quando um elemento anterior é maior que um elemento seguinte, indicando que esses elementos estão "fora de ordem" para um vetor em ordem crescente. Para o vetor A = [4, 3, 2, 1], quantas inversões existem?
+   - a) 4
+   - b) 5
+   - c) 6
+   - d) 7
+
+158. Em qual dos casos abaixo a abordagem de divisão e conquista é mais indicada?
+   - a) Quando o problema pode ser dividido em subproblemas que podem ser resolvidos independentemente.
+   - b) Quando o problema exige acesso sequencial a todos os dados.
+   - c) Quando o problema não pode ser quebrado em subproblemas.
+   - d) Quando a ordem de processamento dos dados não importa.
+
+
+---
+
+160. **Identifique e corrija o erro no código abaixo que tenta contar o número de inversões em um vetor usando divisão e conquista:**
+    ```c
+    int contarInversoes(int arr[], int inicio, int fim) {
+        if (inicio == fim) return 0;
+        int meio = (inicio + fim) / 2;
+        int inversoes = contarInversoes(arr, inicio, meio);
+        inversoes += contarInversoes(arr, meio + 1, fim);
+        inversoes += combinarInversoes(arr, inicio, meio, fim);
+        return meio;
+    }
+    ```
+    **Pergunta:** Qual é o erro no retorno final da função?
+
+161. **Corrija o código abaixo para que ele implemente o algoritmo MergeSort corretamente:**
+    ```c
+    void mergeSort(int arr[], int inicio, int fim) {
+        if (inicio < fim) {
+            int meio = (inicio + fim) / 2;
+            mergeSort(arr, inicio, meio);
+            mergeSort(arr, meio, fim);
+            merge(arr, inicio, meio, fim);
+        }
+    }
+    ```
+    **Pergunta:** Qual é o erro na chamada recursiva para a segunda metade do array?
+
+162. **Erro de Combinação em Inversões:** Corrija o seguinte trecho de código que combina as inversões de duas metades de um vetor dividido:
+    ```c
+    int combinarInversoes(int arr[], int inicio, int meio, int fim) {
+        int i = inicio, j = meio + 1, inversoes = 0;
+        while (i <= meio && j <= fim) {
+            if (arr[i] < arr[j]) {
+                i++;
+            } else {
+                inversoes += (meio - i + 1);
+                j++;
+            }
+        }
+        return inversoes;
+    }
+    ```
+    **Pergunta:** Qual é o problema com o critério de comparação na contagem de inversões?
+
+---
+
+
+163. **Comparação de Listas de Preferências:** Escreva um programa que compare duas listas de preferência de filmes, cada uma com 10 elementos, e conte o número de inversões para verificar a compatibilidade entre as listas.
+
+164. **Ordenação de um Vetor com MergeSort:** Implemente o algoritmo MergeSort para ordenar um vetor de inteiros fornecido pelo usuário. Exiba o vetor antes e depois da ordenação.
+
+165. **Contagem de Inversões com MergeSort Modificado:** Modifique o MergeSort para contar o número de inversões durante o processo de ordenação. Mostre o número total de inversões no final.
+
+
+167. **Multiplicação de Matrizes usando Divisão e Conquista:** Crie uma função recursiva para multiplicar duas matrizes quadradas de ordem 2, dividindo o problema em submatrizes menores e combinando os resultados.
+
+---
+
+## Questões sobre a escolha das Estruturas de Dados
+
+1.  Você foi encarregado de desenvolver um sistema para gerenciar as contas de clientes em um banco. O número de clientes pode aumentar ou diminuir constantemente, dependendo de novos cadastros e encerramentos de contas. Como o banco está crescendo, o sistema precisa de flexibilidade para acomodar facilmente as adições e remoções de clientes. Cada cliente possui informações como número da conta, nome e saldo, que precisam estar acessíveis para consultas e operações.
+
+**Requisitos principais do sistema:**
+
+- Cadastro Dinâmico: O sistema deve permitir o cadastro de novos clientes, sem precisar redimensionar a estrutura que armazena os dados.
+- Encerramento de Conta: Quando um cliente encerra sua conta, ele deve ser removido da estrutura sem reorganizar todos os dados restantes.
+- Consulta de Informações: O sistema deve permitir que gerentes possam visualizar os dados de todos os clientes registrados, além de poder localizar um cliente específico pelo número da conta.
+
+- Pergunta: Qual seria a estrutura de dados mais adequada que você escolheria para implementar esse sistema de gerenciamento de clientes e por quê? Considere as operações de adição, remoção e consulta, e explique como a estrutura de dados escolhida permite que essas operações sejam realizadas de forma eficiente e flexível. Descreva como essa estrutura funciona e como ela facilita a adaptação do sistema ao número variável de clientes.
+---
+2.  Imagine que você está desenvolvendo um sistema para organizar o atendimento de uma equipe de suporte técnico de uma grande empresa. Os clientes fazem solicitações de atendimento ao suporte e, para garantir uma experiência justa, a empresa deseja que os clientes sejam atendidos na ordem em que solicitaram ajuda. Como o número de solicitações pode variar ao longo do dia, o sistema precisa ser capaz de registrar novos pedidos de atendimento e processá-los na sequência correta.
+
+### Requisitos do sistema:
+
+1. **Registro de Solicitações**: O sistema deve ser capaz de registrar cada nova solicitação de atendimento à medida que ela chega.
+2. **Atendimento Ordenado**: O atendimento deve ocorrer na mesma ordem em que as solicitações foram registradas, garantindo que os primeiros a solicitar sejam atendidos primeiro.
+3. **Exclusão após Atendimento**: Após o atendimento de cada cliente, a solicitação dele deve ser removida do sistema para dar lugar ao próximo cliente na fila.
+
+**Pergunta**: Qual estrutura de dados você escolheria para implementar esse sistema de gerenciamento de solicitações de suporte técnico e por quê? Considere as operações de adição e atendimento das solicitações, explicando como a estrutura escolhida permite que essas operações sejam realizadas de forma eficiente. Descreva como a estrutura de dados escolhida atende aos requisitos de ordem de chegada e remoção após o atendimento.
+
+3. Imagine que você está desenvolvendo um sistema para gerenciar o histórico de navegação de um navegador de internet. Quando o usuário visita uma nova página, ela é adicionada ao topo do histórico. Caso o usuário queira voltar para a página anterior, ele deve ser capaz de desfazer sua última ação, retornando à página anterior. Da mesma forma, se o usuário voltar para uma página anterior, ele deve ter a opção de refazer a navegação e avançar para a próxima página visitada.
+
+### Requisitos do sistema:
+
+1. **Adição ao Histórico**: Sempre que uma nova página é visitada, ela deve ser registrada no histórico como a página mais recente.
+2. **Navegação para Páginas Anteriores**: O sistema deve permitir que o usuário volte para a página anterior, desfazendo a última ação de navegação.
+3. **Navegação para Páginas Recentes**: Caso o usuário tenha retornado a uma página anterior, ele deve poder avançar para a página seguinte.
+
+**Pergunta**: Qual estrutura de dados você escolheria para implementar esse sistema de histórico de navegação e por quê? Considere as operações de adição de uma nova página e de navegação para páginas anteriores e seguintes, explicando como a estrutura escolhida permite que essas operações sejam realizadas de forma eficiente. Descreva como essa estrutura de dados gerencia o histórico de navegação e atende aos requisitos de desfazer e refazer ações.
+
+3.  Imagine que você está desenvolvendo um sistema para organizar o fluxo de chamadas em um centro de atendimento. Durante o atendimento, os operadores recebem novas chamadas, e, em algumas situações, precisam colocar uma chamada em espera para atender uma questão urgente. Assim, a última chamada recebida ou colocada em espera deve ser a primeira a ser retomada quando o operador estiver disponível.
+
+### Requisitos do sistema:
+
+1. **Recebimento de Chamadas**: O sistema deve registrar cada nova chamada que chega, colocando-a no topo da lista de atendimento.
+2. **Atendimento de Chamadas**: Quando o operador estiver disponível, ele deve atender a chamada mais recente, ou seja, a última chamada recebida.
+3. **Retorno de Chamadas em Espera**: Se o operador colocou uma chamada em espera para atender outra mais urgente, ele deve retomar a chamada em espera na ordem inversa, atendendo a chamada mais recente primeiro.
+
+**Pergunta**: Qual estrutura de dados você escolheria para implementar esse sistema de controle de chamadas e por quê? Considere as operações de recebimento, atendimento e retomada de chamadas, explicando como a estrutura escolhida permite que essas operações sejam realizadas de forma eficiente. Descreva como essa estrutura de dados gerencia o fluxo de chamadas e atende aos requisitos de atendimento e retomada na ordem correta.
+
+
+4.  Imagine que você está desenvolvendo um sistema para registrar os alunos de uma academia. O número de alunos pode variar constantemente, e o sistema deve ser flexível para adicionar ou remover registros conforme novos alunos se matriculam ou cancelam suas matrículas. Cada aluno possui um número de matrícula único e outras informações, como nome e data de início na academia. O sistema precisa garantir que a remoção ou inserção de alunos ocorra de forma simples, sem a necessidade de reordenar todos os registros.
+
+### Requisitos do sistema:
+
+1. **Cadastro Flexível**: O sistema deve permitir a adição de novos alunos sem reorganizar todos os registros, garantindo uma adição eficiente de novos cadastros.
+2. **Remoção Simples**: Quando um aluno decide cancelar a matrícula, o sistema deve remover seu registro sem comprometer a estrutura dos demais dados de alunos.
+3. **Ponto de Referência (Cabeça)**: O sistema deve ter um ponto de referência inicial para facilitar o controle e a consulta de todos os alunos registrados, servindo como uma base para percorrer a lista.
+
+**Pergunta**: Qual estrutura de dados você escolheria para implementar esse sistema de registro de alunos e por quê? Considere as operações de inserção e remoção de alunos, e explique como a estrutura escolhida permite realizar essas operações de forma eficiente. Descreva como essa estrutura de dados pode utilizar um ponto de referência inicial para gerenciar todos os registros e atender aos requisitos de flexibilidade para adicionar e remover alunos.
+
+
+
+
+
+
+
+
+
 
 
 
