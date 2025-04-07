@@ -28,6 +28,36 @@ Um **nó cabeça** é um nó especial usado no início da lista. Ele:
 
 ---
 
+
+### 🧩 Exemplo: Lista Ligada Simples com Nó Cabeça
+
+
+A figura abaixo ilustra a estrutura de uma **lista ligada simples** que utiliza um **nó cabeça**. Esse tipo de lista é composto por uma sequência de nós, onde cada nó armazena um dado e uma referência (ponteiro) para o próximo nó da lista.
+
+![Lista Ligada com Nó Cabeça](https://github.com/ICTIN-UFLA/AED-Johnatan-2024-1/blob/main/2025-1/Lista-Ligada/img/cabeca.png)
+
+## 🟥 Nó Cabeça (Head)
+
+Representado na extremidade esquerda da figura com destaque em vermelho, o **nó cabeça** não armazena dados úteis da aplicação. Sua principal função é servir como ponto de partida da lista e facilitar operações como inserção e remoção no início da estrutura. Ele sempre aponta para o primeiro nó que contém dados válidos.
+
+## 🟫 Nós de Dados
+
+Os nós seguintes, com cor bege, armazenam os dados da lista. Cada nó possui dois campos:
+
+- **Dado**: O valor armazenado no nó (pode ser um número, caractere, estrutura, etc.).
+- **Próximo**: Um ponteiro que indica o próximo nó da lista.
+
+## 🔚 Fim da Lista
+
+O último nó da lista possui o campo "próximo" apontando para `NULL`, o que indica que não há mais elementos após ele.
+
+---
+
+Essa organização permite a **inserção e remoção dinâmica de elementos**, sem a necessidade de realocação de memória, sendo especialmente útil em cenários onde o número de elementos varia constantemente.
+
+
+
+
 ## 🔧 Estrutura da Lista
 
 ```c
