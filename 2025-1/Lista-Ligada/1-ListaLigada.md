@@ -16,7 +16,7 @@ Além disso, discutiremos as **vantagens, desvantagens** e **diferenças princip
 
 A figura a seguir representa o funcionamento de uma **lista ligada simples**, uma estrutura de dados dinâmica amplamente utilizada em algoritmos e sistemas que requerem flexibilidade na manipulação de elementos.
 
-![Lista Ligada](image.png)
+![Lista Ligada](https://github.com/ICTIN-UFLA/AED-Johnatan-2024-1/blob/main/2025-1/Lista-Ligada/img/listaencadeada.png)
 
 #### 🧠 Explicação da estrutura:
 
