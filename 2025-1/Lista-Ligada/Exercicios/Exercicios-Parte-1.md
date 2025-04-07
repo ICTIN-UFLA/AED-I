@@ -1,5 +1,5 @@
 
-# 📘 Lista de Exercícios – Estruturas de Listas em C
+# 📘 Lista de Exercícios Parte 1
 
 Cada exercício a seguir foi cuidadosamente elaborado para reforçar os conceitos das diferentes variações de listas ligadas estudadas. As explicações a seguir justificam a escolha da estrutura de dados utilizada em cada situação.
 
