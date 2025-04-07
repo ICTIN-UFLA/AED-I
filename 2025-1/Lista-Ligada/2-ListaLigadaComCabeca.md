@@ -49,7 +49,7 @@ Os nós seguintes, com cor bege, armazenam os dados da lista. Cada nó possui do
 
 ## 🔚 Fim da Lista
 
-O último nó da lista possui o campo "próximo" apontando para `NULL`, o que indica que não há mais elementos após ele.
+O último nó da lista possui o campo "próximo" apontando para `NULL` (0), o que indica que não há mais elementos após ele.
 
 ---
 
