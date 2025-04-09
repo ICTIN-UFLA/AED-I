@@ -86,3 +86,70 @@ Bonus...............: 530
 - Mantenha o código modular, com funções para leitura, cálculo e exibição.
 - Certifique-se de fechar corretamente o arquivo após a leitura.
 - Não se esqueça de testar seu programa com diferentes cenários, inclusive empregados com mais de três filhos.
+- 
+
+## Exemplo de leitura de arquivo 
+
+# Menu em C para Ler e Imprimir Arquivo TXT
+
+## Descrição
+
+Este é um exemplo simples de um programa em C que implementa um menu interativo para ler e imprimir o conteúdo de um arquivo `.txt`.
+
+### Funcionalidades
+- O programa exibe um menu com duas opções:
+  1. Ler e imprimir o conteúdo de um arquivo.
+  2. Sair do programa.
+- Quando o usuário escolhe a opção de ler o arquivo, o programa solicita o nome do arquivo (com a extensão `.txt`), abre o arquivo e imprime seu conteúdo na tela.
+- Caso o arquivo não possa ser aberto, o programa exibe uma mensagem de erro.
+- O programa continua em execução até o usuário escolher a opção de sair.
+
+## Código
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void lerArquivo(char *nomeArquivo) {
+    FILE *arquivo = fopen(nomeArquivo, "r");
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return;
+    }
+
+    char ch;
+    while ((ch = fgetc(arquivo)) != EOF) {
+        putchar(ch);  // Imprime o caractere
+    }
+
+    fclose(arquivo);
+}
+
+int main() {
+    int opcao;
+    char nomeArquivo[100];
+
+    while (1) {
+        printf("Menu:\n");
+        printf("1. Ler e imprimir arquivo\n");
+        printf("2. Sair\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        switch (opcao) {
+            case 1:
+                printf("Digite o nome do arquivo (com extensão .txt): ");
+                scanf("%s", nomeArquivo);
+                lerArquivo(nomeArquivo);
+                break;
+            case 2:
+                printf("Saindo...\n");
+                return 0;
+            default:
+                printf("Opção inválida. Tente novamente.\n");
+        }
+    }
+
+    return 0;
+}
+```
